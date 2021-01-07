@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    let menu = Bundle.main.decode([MenuSection].self, from:"menu.json")
+  
+    @EnvironmentObject var order:Order
+
+
     var body: some View {
         NavigationView{
             List{
-                ForEach(menu) { section in
+                ForEach(order.items_all) { section in
                     
                     Section(header: Text(section.name)){
                         ForEach(section.items){ item  in
@@ -20,19 +23,19 @@ struct ContentView: View {
                         }
                     }
                     
-                  
- 
                 }
               
                 
             } .navigationTitle("Menu")
             .listStyle(GroupedListStyle())
+            
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let order = Order()
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(order)
     }
 }

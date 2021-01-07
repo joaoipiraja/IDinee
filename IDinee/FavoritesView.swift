@@ -11,7 +11,24 @@ struct FavoritesView: View {
     @EnvironmentObject var order:Order
 
     var body: some View {
-        Text("Available soon")
+        NavigationView{
+            List{
+                ForEach(order.getFavorited()) { section in
+                    
+
+                    Section(header: Text(section.name)){
+                        ForEach(section.items){ item  in
+                            itemRow(item: item)
+                        }
+                    }
+                    
+                }
+              
+                
+            } .navigationTitle("Favorites")
+            .listStyle(GroupedListStyle())
+            
+        }
     }
 }
 

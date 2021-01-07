@@ -115,6 +115,8 @@
 			dependencies = (
 			);
 			name = IDinee;
+			packageProductDependencies = (
+			);
 			productName = IDinee;
 			productReference = 4EAFA97C25A773990075F99F /* IDinee.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +144,8 @@
 				Base,
 			);
 			mainGroup = 4EAFA97325A773990075F99F;
+			packageReferences = (
+			);
 			productRefGroup = 4EAFA97D25A773990075F99F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

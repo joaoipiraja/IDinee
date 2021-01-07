@@ -9,9 +9,7 @@ import SwiftUI
 
 struct itemRow: View {
     
-    
-        
-   
+    @EnvironmentObject var order:Order
     
     static let colors: [String:Color] = ["D": .purple, "G": .black, "N": .red, "S": .blue, "V": .green ]
     var item: MenuItem
@@ -21,6 +19,21 @@ struct itemRow: View {
         NavigationLink(destination: itemDetailed(item: item)){
             
         HStack{
+            
+            ZStack(alignment: .bottom){
+                
+                if(item.isFavorited){
+                    Image(systemName: "star.fill")
+                }else{
+                    Image(systemName: "star")
+                }
+                
+                Button("    "){
+                    order.addfavorite(item: item)
+                }.buttonStyle(PlainButtonStyle())
+            }.padding()
+           
+            
             Image(item.thumbnailImage).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).overlay(Circle().stroke(Color.gray, lineWidth: 2))
             
             VStack(alignment: .leading){
@@ -42,7 +55,9 @@ struct itemRow: View {
 }
 
 struct itemRow_Previews: PreviewProvider {
+    static let order = Order()
+    
     static var previews: some View {
-        itemRow(item: MenuItem.example)
+        itemRow(item: MenuItem.example).environmentObject(order)
     }
 }
