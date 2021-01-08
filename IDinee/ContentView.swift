@@ -15,6 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
+               
                 ForEach(order.items_all) { section in
                     
                     Section(header: Text(section.name)){

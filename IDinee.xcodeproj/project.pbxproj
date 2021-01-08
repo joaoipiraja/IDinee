@@ -30,6 +30,7 @@
 		4E1A954F25A7867300A5F033 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		4E1A955225A7883C00A5F033 /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 		4E1A955A25A79EA700A5F033 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		4E1A958725A7D60A00A5F033 /* IDinee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IDinee.entitlements; sourceTree = "<group>"; };
 		4EAFA97C25A773990075F99F /* IDinee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDinee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAFA97F25A773990075F99F /* IDineeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDineeApp.swift; sourceTree = "<group>"; };
 		4EAFA98125A773990075F99F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		4EAFA97E25A773990075F99F /* IDinee */ = {
 			isa = PBXGroup;
 			children = (
+				4E1A958725A7D60A00A5F033 /* IDinee.entitlements */,
 				4EAFA97F25A773990075F99F /* IDineeApp.swift */,
 				4EAFA98125A773990075F99F /* ContentView.swift */,
 				4EAFA99725A774230075F99F /* menu.json */,
@@ -311,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IDinee/IDinee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"IDinee/Preview Content\"";
 				DEVELOPMENT_TEAM = V7GM8G5V55;
@@ -323,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaovictoripiraja.IDinee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IDinee/IDinee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"IDinee/Preview Content\"";
 				DEVELOPMENT_TEAM = V7GM8G5V55;
@@ -345,6 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaovictoripiraja.IDinee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
