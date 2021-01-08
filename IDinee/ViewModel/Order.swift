@@ -34,8 +34,7 @@ class Order: ObservableObject{
                 let mi = ms.items.filter{$0.isFavorited}
                 aux[i].items = mi
             }
-            //
-            //print(mi)
+            
         }
         
         return aux
