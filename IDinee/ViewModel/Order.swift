@@ -14,6 +14,8 @@ class Order: ObservableObject{
     
     
     
+    
+    
     var total: Int {
         if items_sell.count > 0 {
             return items_sell.reduce(0) { $0 + $1.price }
@@ -22,6 +24,7 @@ class Order: ObservableObject{
         }
     }
     
+
     
     func getFavorited() -> [MenuSection] {
         

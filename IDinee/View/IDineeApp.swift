@@ -19,9 +19,7 @@ struct IDineeApp: App {
     var body: some Scene {
        
         WindowGroup {
-            
             AppView().environmentObject(order)
-            
         }
     }
 }

@@ -75,16 +75,24 @@
 		4E66A0D625A8EF39009A71EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4E66A0D825A8F1E4009A71EA /* List */,
 				4EAFA97F25A773990075F99F /* IDineeApp.swift */,
 				4E1A954F25A7867300A5F033 /* AppView.swift */,
 				4EAFA98125A773990075F99F /* ContentView.swift */,
-				4E1A954625A77AB800A5F033 /* itemRow.swift */,
-				4E1A954925A7807200A5F033 /* itemDetailed.swift */,
 				4E1A954C25A7850C00A5F033 /* OrderView.swift */,
 				4E1A955225A7883C00A5F033 /* CheckOutView.swift */,
 				4E1A955A25A79EA700A5F033 /* FavoritesView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4E66A0D825A8F1E4009A71EA /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4E1A954625A77AB800A5F033 /* itemRow.swift */,
+				4E1A954925A7807200A5F033 /* itemDetailed.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		4EAFA97325A773990075F99F = {
