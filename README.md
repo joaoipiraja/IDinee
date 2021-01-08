@@ -2,7 +2,7 @@
 # IDinee
 IDinee IOS APP using SwiftUI 
 ### Learn 📝
-Create ```@EnvironmentObject``` \ ```class Order: ObservableObject``` to pass Data through views, create TabView/Togle/Form/Sections/Buttons
+Create ```@EnvironmentObject``` / ```class Order: ObservableObject``` to pass Data through views, create TabView/Togle/Form/Sections/Buttons
 ### Screenshots 📸
 [<img src="/screenshots/screenshot1.png" width="250" />](screenshot1.png)
 [<img src="/screenshots/screenshot2.png" width="250" />](screenshot2.png)
